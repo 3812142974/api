@@ -1,0 +1,95 @@
+name: Publish links.json Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag name'
+        required: true
+        default: 'v0.0.1'
+      title:
+        description: 'Release title'
+        required: true
+        default: 'v0.0.1'
+      body:
+        description: 'Release notes'
+        required: false
+        default: 'Release 0.0.1'
+      draft:
+        description: 'Create as draft?'
+        required: false
+        default: 'false'
+      prerelease:
+        description: 'Create as prerelease?'
+        required: false
+        default: 'false'
+      target:
+        description: 'Target branch or commitish'
+        required: true
+        default: 'main'
+  push:
+    paths:
+      - '.github/trigger_release/**'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      releases: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify links.json exists
+        run: |
+          if [ ! -f links.json ]; then
+            echo "links.json not found in repository root (expected path: /links.json)." >&2
+            ls -la
+            exit 1
+          fi
+
+      - name: Determine inputs for create-release
+        id: inputs
+        run: |
+          # For push events, set defaults; for workflow_dispatch use provided inputs
+          if [ "${{ github.event_name }}" = "push" ]; then
+            echo "tag=v0.0.1" >> $GITHUB_OUTPUT || true
+            echo "title=v0.0.1" >> $GITHUB_OUTPUT || true
+            echo "body=Release 0.0.1" >> $GITHUB_OUTPUT || true
+            echo "draft=false" >> $GITHUB_OUTPUT || true
+            echo "prerelease=false" >> $GITHUB_OUTPUT || true
+            echo "target_commitish=${GITHUB_REF#refs/heads/}" >> $GITHUB_OUTPUT || true
+          else
+            echo "tag=${{ github.event.inputs.tag }}" >> $GITHUB_OUTPUT || true
+            echo "title=${{ github.event.inputs.title }}" >> $GITHUB_OUTPUT || true
+            echo "body=${{ github.event.inputs.body }}" >> $GITHUB_OUTPUT || true
+            echo "draft=${{ github.event.inputs.draft }}" >> $GITHUB_OUTPUT || true
+            echo "prerelease=${{ github.event.inputs.prerelease }}" >> $GITHUB_OUTPUT || true
+            echo "target_commitish=${{ github.event.inputs.target }}" >> $GITHUB_OUTPUT || true
+          fi
+
+      - name: Create release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.inputs.outputs.tag }}
+          release_name: ${{ steps.inputs.outputs.title }}
+          body: ${{ steps.inputs.outputs.body }}
+          draft: ${{ steps.inputs.outputs.draft }}
+          prerelease: ${{ steps.inputs.outputs.prerelease }}
+          target_commitish: ${{ steps.inputs.outputs.target_commitish }}
+
+      - name: Upload links.json asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./links.json
+          asset_name: links.json
+          asset_content_type: application/json
