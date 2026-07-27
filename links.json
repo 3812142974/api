@@ -1,0 +1,418 @@
+[
+  {
+    "name": "报时",
+    "url": "https://api.yuafeng.cn/API/ly/time.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "报时"
+    ]
+  },
+  {
+    "name": "答题",
+    "url": "https://api.yuafeng.cn/API/ly/random_question.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "答题"
+    ]
+  },
+  {
+    "name": "热门事件",
+    "url": "https://api.yuafeng.cn/API/ly/jinri_hot.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "热门事件"
+    ]
+  },
+  {
+    "name": "随机龙图",
+    "url": "https://api.yuafeng.cn/API/ly/long.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "随机龙图"
+    ]
+  },
+  {
+    "name": "米游社随机图",
+    "url": "https://api.yuafeng.cn/API/ly/mys.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "米游社随机图"
+    ]
+  },
+  {
+    "name": "坤坤语音",
+    "url": "https://api.yuafeng.cn/API/ly/kun.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "坤坤语音"
+    ]
+  },
+  {
+    "name": "随机网易云",
+    "url": "https://api.yuafeng.cn/API/ly/randomNetease.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "随机网易云"
+    ]
+  },
+  {
+    "name": "怼生活一言",
+    "url": "https://api.yuafeng.cn/API/ly/yiyan.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "怼生活一言"
+    ]
+  },
+  {
+    "name": "文案一言",
+    "url": "https://api.yuafeng.cn/API/ly/yiyan_new.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "文案一言"
+    ]
+  },
+  {
+    "name": "日期",
+    "url": "https://api.yuafeng.cn/API/ly/calendar.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "日期"
+    ]
+  },
+  {
+    "name": "动漫图",
+    "url": "https://api.yuafeng.cn/API/ly/acg.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "动漫图"
+    ]
+  },
+  {
+    "name": "必应每日",
+    "url": "https://api.yuafeng.cn/API/ly/bing/",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "必应每日"
+    ]
+  },
+  {
+    "name": "随机网抑",
+    "url": "https://api.yuafeng.cn/API/ly/emo.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "随机网抑"
+    ]
+  },
+  {
+    "name": "随机手机壁纸",
+    "url": "https://api.yuafeng.cn/API/ly/bizhi.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "随机手机壁纸"
+    ]
+  },
+  {
+    "name": "随机语音",
+    "url": "https://api.yuafeng.cn/API/ly/sjyy.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "随机语音"
+    ]
+  },
+  {
+    "name": "社会语录",
+    "url": "https://api.yuafeng.cn/API/ly/shehui.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "社会语录"
+    ]
+  },
+  {
+    "name": "人生语录",
+    "url": "https://api.yuafeng.cn/API/ly/rensheng.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "人生语录"
+    ]
+  },
+  {
+    "name": "笑话语录",
+    "url": "https://api.yuafeng.cn/API/ly/xiaohua.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "笑话语录"
+    ]
+  },
+  {
+    "name": "爱情语录",
+    "url": "https://api.yuafeng.cn/API/ly/aiqing.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "爱情语录"
+    ]
+  },
+  {
+    "name": "温柔语录",
+    "url": "https://api.yuafeng.cn/API/ly/wenrou.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "温柔语录"
+    ]
+  },
+  {
+    "name": "毒鸡汤",
+    "url": "https://api.yuafeng.cn/API/ly/djt.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "毒鸡汤"
+    ]
+  },
+  {
+    "name": "我在人间凑数的日子",
+    "url": "https://api.yuafeng.cn/API/ly/wzrjcs.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "我在人间凑数的日子"
+    ]
+  },
+  {
+    "name": "古诗语录",
+    "url": "https://api.yuafeng.cn/API/ly/gushi.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "古诗语录"
+    ]
+  },
+  {
+    "name": "舔狗语录",
+    "url": "https://api.yuafeng.cn/API/ly/tiangou.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "舔狗语录"
+    ]
+  },
+  {
+    "name": "土味情话",
+    "url": "https://api.yuafeng.cn/API/ly/twqh.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "土味情话"
+    ]
+  },
+  {
+    "name": "伤感语录",
+    "url": "https://api.yuafeng.cn/API/ly/shanggan.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "伤感语录"
+    ]
+  },
+  {
+    "name": "英汉语录",
+    "url": "https://api.yuafeng.cn/API/ly/yhyl.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "英汉语录"
+    ]
+  },
+  {
+    "name": "动漫视频",
+    "url": "https://api.yuafeng.cn/API/ly/dmxl.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "动漫视频"
+    ]
+  },
+  {
+    "name": "治愈视频",
+    "url": "https://api.yuafeng.cn/API/ly/zyxl.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "治愈视频"
+    ]
+  },
+  {
+    "name": "帅哥视频",
+    "url": "https://api.yuafeng.cn/API/dnbz/api.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "帅哥视频"
+    ]
+  },
+  {
+    "name": "电脑壁纸",
+    "url": "https://api.yuafeng.cn/API/dnbz/api.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "电脑壁纸"
+    ]
+  },
+  {
+    "name": "二次元头像",
+    "url": "https://api.yuafeng.cn/API/ecr/api.php",
+    "type": "text",
+    "params": {
+      "type": "text"
+    },
+    "parse": "",
+    "scope": [],
+    "keywords": [
+      "二次元头像"
+    ]
+  }
+]
