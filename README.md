@@ -2,7 +2,6 @@
 [报时](https://api.yuafeng.cn/API/ly/time.php)  
 [答题](https://api.yuafeng.cn/API/ly/random_question.php)  
 [热门事件](https://api.yuafeng.cn/API/ly/jinri_hot.php)  
-[随机龙图](https://api.yuafeng.cn/API/ly/long.php)  
 [米游社随机图](https://api.yuafeng.cn/API/ly/mys.php)  
 [坤坤语音](https://api.yuafeng.cn/API/ly/kun.php)  
 [随机网易云](https://api.yuafeng.cn/API/ly/randomNetease.php)  
