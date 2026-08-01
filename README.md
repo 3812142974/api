@@ -4,7 +4,6 @@
 [热门事件](https://api.yuafeng.cn/API/ly/jinri_hot.php)  
 [米游社cos图](https://api.yuafeng.cn/API/ly/mys.php)  
 [坤坤语音](https://api.yuafeng.cn/API/ly/kun.php)  
-[随机网易云](https://api.yuafeng.cn/API/ly/randomNetease.php)  
 [怼生活一言](https://api.yuafeng.cn/API/ly/yiyan.php)  
 [文案一言](https://api.yuafeng.cn/API/ly/yiyan_new.php)  
 [日期](https://api.yuafeng.cn/API/ly/calendar.php)  
