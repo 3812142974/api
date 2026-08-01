@@ -26,6 +26,6 @@
 [英汉语录](https://api.yuafeng.cn/API/ly/yhyl.php)  
 [动漫视频](https://api.yuafeng.cn/API/ly/dmxl.php)  
 [治愈视频](https://api.yuafeng.cn/API/ly/zyxl.php)  
-[帅哥视频](https://api.yuafeng.cn/API/dnbz/api.php)  
+[帅哥视频](https://api.yuafeng.cn/API/ly/sgxl.php)  
 [电脑壁纸](https://api.yuafeng.cn/API/dnbz/api.php)  
 [二次元头像](https://api.yuafeng.cn/API/ecr/api.php)  
